@@ -1,10 +1,2 @@
-httpd:
-    image: apache
-    links:
-        - rlogd
-    command: apache2 -DFOREGROUND
-redis:
-    image: redis
-    volumes:
-        - db/:/db/
-    command: redis
+sshd:
+    image: yokogawa/sshd-centos
